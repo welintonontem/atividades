@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário com Tabela de Dados</title>
+<style>
+    /* Estilo simples para a tabela */
+    table {
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<h2>Formulário de Contato</h2>
+
+<form id="contactForm">
+    <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- Tabela para exibir os dados -->
+<table id="dataTable" style="display: none;">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Linhas da tabela serão adicionadas dinamicamente pelo JavaScript -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

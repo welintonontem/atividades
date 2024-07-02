@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edição de Usuários</title>
+<style>
+    /* Estilo simples para a tabela */
+    table {
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<h2>Edição de Usuários</h2>
+
+<form id="userForm">
+    <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <button type="button" id="saveButton">Salvar</button>
+    <button type="button" id="cancelButton">Cancelar</button>
+</form>
+
+<!-- Tabela para exibir os usuários -->
+<table id="userTable">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody id="userList">
+        <!-- Linhas da tabela serão adicionadas dinamicamente pelo JavaScript -->
+        <tr>
+            <td>João</td>
+            <td>joao@example.com</td>
+            <td><button type="button" class="editButton">Editar</button></td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>maria@example.com</td>
+            <td><button type="button" class="editButton">Editar</button></td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>jose@example.com</td>
+            <td><button type="button" class="editButton">Editar</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="index.js"></script>
+
+</body>
+</html>
+
