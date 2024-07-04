@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs dentro de Container Flex</title>
+    <style>
+        .container {
+            display: flex; 
+        }
+
+        .container > div {
+            flex: 1; 
+            border: 1px solid #000; 
+            padding: 20px; 
+            text-align: center;
+            margin: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Container principal com classe "container" -->
+    <div class="container">
+        <!-- Primeira div -->
+        <div>Div 1</div>
+
+        <!-- Segunda div -->
+        <div>Div 2</div>
+
+        <!-- Terceira div -->
